@@ -8,7 +8,7 @@ export const Skills = () => {
     }
     return (
         <div className={`${mainStyles.mainBGColor} ${styles.skills_wrapper}`}>
-            <div className={`${mainStyles.container}`}>
+            <div className={`${mainStyles.main_container}`}>
                 <h2 className={styles.skills_title}>Skills</h2>
                 <div className={styles.skills_items}>
                     {item.name.map((skill, i) => <Skill key={i} skill={skill}/>)}

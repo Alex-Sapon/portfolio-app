@@ -7,13 +7,12 @@ export const Projects = () => {
 
     return (
         <div className={`${styles.projects_wrapper} ${mainStyles.mainBGColor}`}>
-            <div className={`${mainStyles.container}`}>
+            <div className={`${mainStyles.main_container}`}>
                 <h2 className={styles.projects_title}>Projects</h2>
                 <div className={styles.projects_items}>
                     {projects.map((item, i) => <Project key={i} item={item}/>)}
                 </div>
             </div>
-
         </div>
     )
 }
