@@ -1,0 +1,72 @@
+.greetings_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    height: 100vh;
+}
+
+.greetings_avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    flex: 0 0 auto;
+    margin-right: 60px;
+    background-color: lightslategrey;
+}
+
+.greetings_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.greetings_description span {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: 105px;
+    border-bottom: solid 2px #7788993b;
+    animation: go-left-right 1s infinite alternate;
+}
+
+@keyframes go-left-right {
+    from {
+        left: 0px;
+    } 
+    to {
+        left: 20px;
+    }  
+}
+
+.greetings_description h1 {
+    margin-bottom: 10px;
+}
+
+.greetings_description p {
+    font-size: 18px;
+}
+
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+    .greetings_container {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 0 0 none;
+    }
+    .greetings_avatar {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .greetings_description {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 479.98px) {}

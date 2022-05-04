@@ -1,0 +1,13 @@
+.about_container {
+    padding-bottom: 60px;
+}
+
+.about_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about_items {
+    display: grid;
+    gap: 20px;
+}

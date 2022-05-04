@@ -1,6 +1,6 @@
 .nav_container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -9,11 +9,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: 300px;
     font-size: 18px;
+    width: 400px;
 }
 
-.nav_list a{
+.nav_list a {
     text-decoration: none;
 }
 
@@ -27,8 +27,12 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 767.98px) {
-    .nav_container {
-        justify-content: center;
+    .nav_list li:not(:first-child) {
+        display: none;
+        width: 400px;
+    }
+    .nav_list {
+        width: auto;
     }
 }
 
