@@ -6,8 +6,8 @@ export const Projects = () => {
     const projects = ['Social network', 'Todo list', 'Counter', 'Ecommerce']
 
     return (
-        <div className={`${styles.projects_wrapper} ${mainStyles.mainBGColor}`}>
-            <div className={`${mainStyles.main_container}`}>
+        <div className={`${mainStyles.mainBGColor}`}>
+            <div className={`${styles.projects_wrapper} ${mainStyles.main_container}`}>
                 <h2 className={styles.projects_title}>Projects</h2>
                 <div className={styles.projects_items}>
                     {projects.map((item, i) => <Project key={i} item={item}/>)}
