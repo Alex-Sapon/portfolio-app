@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.ac57915a.css",
-    "main.js": "/portfolio-app/static/js/main.67c5cc6a.js",
+    "main.css": "/portfolio-app/static/css/main.6276ab2c.css",
+    "main.js": "/portfolio-app/static/js/main.4f1fc197.js",
     "static/media/avatar.png": "/portfolio-app/static/media/avatar.0ee1c0bd62462a84cbf4.png",
     "static/media/bg.png": "/portfolio-app/static/media/bg.0225267609dbd40b1c41.png",
+    "static/media/react.svg": "/portfolio-app/static/media/react.21a0c19c223ef140c1a0a351bd45c89c.svg",
     "static/media/instagram.svg": "/portfolio-app/static/media/instagram.8ff7ce92ad753b591ed4c1d03e84c026.svg",
+    "static/media/redux.svg": "/portfolio-app/static/media/redux.9dd5b17e93efa9410e2b996822cd4ae0.svg",
     "static/media/github.svg": "/portfolio-app/static/media/github.22e156c8e7424c442bb31a9d6f3403c1.svg",
+    "static/media/js.svg": "/portfolio-app/static/media/js.45687a3d83053bd27bac35627e904d53.svg",
     "static/media/telegram.svg": "/portfolio-app/static/media/telegram.b0589b5e724dd92cc132ddb6a0e049d9.svg",
+    "static/media/sun.svg": "/portfolio-app/static/media/sun.9abac4b0500e309b346737f755e40939.svg",
+    "static/media/css.svg": "/portfolio-app/static/media/css.74d7bcc15b667f1b98e7c0170080357e.svg",
+    "static/media/html.svg": "/portfolio-app/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "index.html": "/portfolio-app/index.html",
+    "static/media/moon.svg": "/portfolio-app/static/media/moon.f7f6a5694d849d508c5b3bd656a599aa.svg",
     "static/media/linkedin.svg": "/portfolio-app/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.ac57915a.css.map": "/portfolio-app/static/css/main.ac57915a.css.map",
-    "main.67c5cc6a.js.map": "/portfolio-app/static/js/main.67c5cc6a.js.map"
+    "static/media/ts.svg": "/portfolio-app/static/media/ts.3c3e66ed2768391469c8b74c302a6e5c.svg",
+    "main.6276ab2c.css.map": "/portfolio-app/static/css/main.6276ab2c.css.map",
+    "main.4f1fc197.js.map": "/portfolio-app/static/js/main.4f1fc197.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac57915a.css",
-    "static/js/main.67c5cc6a.js"
+    "static/css/main.6276ab2c.css",
+    "static/js/main.4f1fc197.js"
   ]
 }
