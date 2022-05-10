@@ -12,9 +12,25 @@
     font-size: 28px;
     border-bottom: solid 1px #e2e8f0;
     align-self: center;
+    color: #2d3748;
+}
+
+.about_subtitle {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    border-bottom: solid 1px #e2e8f0;
+    align-self: center;
+    color: #2d3748;
 }
 
 .about_items {
     display: grid;
     gap: 20px;
+}
+
+.about_section {
+    margin-bottom: 30px;
 }
