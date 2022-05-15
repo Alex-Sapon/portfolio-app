@@ -12,9 +12,7 @@
     align-items: center;
 }
 
-.footer_copy {
-    color: #718096;
-}
+.footer_copy {}
 
 .footer_nav li img {
     width: 30px;

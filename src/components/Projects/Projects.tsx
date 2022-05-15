@@ -6,7 +6,7 @@ export const Projects = () => {
     const projects = ['Social network', 'Todo list', 'Counter', 'Ecommerce']
 
     return (
-        <div className={`${mainStyles.mainBGColor}`}>
+        <div>
             <div className={`${styles.projects_wrapper} ${mainStyles.main_container}`}>
                 <h2 className={styles.projects_title}>Projects</h2>
                 <div className={styles.projects_items}>

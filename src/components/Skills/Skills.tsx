@@ -24,7 +24,7 @@ export const Skills = () => {
     ]
 
     return (
-        <div className={`${mainStyles.mainBGColor}`}>
+        <div>
             <div className={`${mainStyles.main_container} ${styles.skills_wrapper}`}>
                 <h2 className={styles.skills_title}>Skills</h2>
                 <div className={styles.skills_items}>

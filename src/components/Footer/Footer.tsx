@@ -7,7 +7,7 @@ import TelegramLogo from '../../common/images/telegram.svg';
 
 export const Footer = () => {
     return (
-        <footer className={mainStyles.mainBGColor}>
+        <footer>
             <div className={`${styles.footer_container} ${mainStyles.main_container}`}>
                 <p className={styles.footer_copy}>© 2022 Aleksandr Saponchik</p>
                 <ul className={styles.footer_nav}>

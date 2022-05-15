@@ -3,7 +3,7 @@ import styles from './ContactForm.module.css';
 
 export const ContactForm = () => {
     return (
-        <div className={`${mainStyles.mainBGColor}`}>
+        <div>
             <div className={`${styles.contact_form_container} ${mainStyles.main_container}`}>
                 <h2 className={styles.contact_form_title}>Get in touch with me</h2>
                 <form className={styles.contact_form} action="">
