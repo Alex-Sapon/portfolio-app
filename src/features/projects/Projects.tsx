@@ -1,5 +1,4 @@
 import {Project} from './Project/Project';
-import mainStyles from '../../common/styles/General.module.css';
 import { projects } from '../../data/data';
 import {Title} from '../../components/title/Title';
 import styled from 'styled-components';
@@ -7,7 +6,7 @@ import styled from 'styled-components';
 
 export const Projects = () => {
     return (
-        <Wrapper className={mainStyles.main_container}>
+        <Wrapper>
             <Title title='Projects'/>
             <ProjectsList>
                 {projects.map(item => <Project key={item?.id} {...item}/>)}

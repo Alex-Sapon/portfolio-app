@@ -1,5 +1,4 @@
 import {Skill} from './Skill/Skill';
-import mainStyles from '../../common/styles/General.module.css';
 import styles from './Skills.module.css';
 import HTMLIcon from '../../common/images/html.svg';
 import CSSIcon from '../../common/images/css.svg';
@@ -25,7 +24,7 @@ export const Skills = () => {
 
     return (
         <div>
-            <div className={`${mainStyles.main_container} ${styles.skills_wrapper}`}>
+            <div className={styles.skills_wrapper}>
                 <h2 className={styles.skills_title}>Skills</h2>
                 <div className={styles.skills_items}>
                     {item.map((skill, i) => <Skill key={i} skill={skill}/>)}

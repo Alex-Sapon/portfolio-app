@@ -1,25 +1,28 @@
-import {useEffect, useState} from 'react';
-import {Header} from './features/header/Header';
-import {Greetings} from './features/greetings/Greetings';
-import {Skills} from './features/skills/Skills';
-import {ContactForm} from './features/contact-form/ContactForm';
-import {Footer} from './features/footer/Footer';
-import {Projects} from './features/projects/Projects';
-import {About} from './features/about/About';
+import {Header} from '../../features/header/Header';
+import {Greetings} from '../../features/greetings/Greetings';
+import {Skills} from '../../features/skills/Skills';
+import {ContactForm} from '../../features/contact-form/ContactForm';
+import {Footer} from '../../features/footer/Footer';
+import {Projects} from '../../features/projects/Projects';
+import {About} from '../../features/about/About';
 import styled, {ThemeProvider} from 'styled-components';
-import {loadState, saveState, ThemeType} from './utils/local-storage';
+import {useDispatch, useSelector} from 'react-redux';
+
+import {AppActions} from '../app/app-actions'
+import {RootStateType} from '../app/store'
+
+export const selectTheme = (state: RootStateType) => state.app.theme;
 
 export const App = () => {
-    const [theme, setTheme] = useState<ThemeType | undefined>(loadState());
-    const isDarkTheme = theme === 'dark';
+    const dispatch = useDispatch();
 
-    useEffect(() => {
-        setTheme(loadState());
-    }, [theme]);
+    const theme = useSelector(selectTheme);
 
     const toggleTheme = () => {
-        setTheme(saveState(isDarkTheme ? 'light' : 'dark'));
+        dispatch(AppActions.setTheme(theme === 'dark' ? 'light' : 'dark'));
     };
+
+    const isDarkTheme = theme === 'dark';
 
     return (
         <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
@@ -62,3 +65,4 @@ const darkTheme = {
     body: '#2d3748',
     title: '#F7FAFC',
 }
+

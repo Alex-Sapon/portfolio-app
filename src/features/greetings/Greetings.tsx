@@ -1,11 +1,10 @@
-import mainStyles from '../../common/styles/General.module.css';
 import styles from './Greetings.module.css';
 import Avatar from '../../common/images/avatar.png';
 
 
 export const Greetings = () => {
     return (
-        <div className={`${styles.greetings_container} ${mainStyles.main_container}`}>
+        <div className={styles.greetings_container}>
             <img className={styles.greetings_avatar} src={Avatar} alt="Avatar"/>
             <div className={styles.greetings_description}>
                 <span>Hey! 👋</span>

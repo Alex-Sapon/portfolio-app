@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { Subtitle } from '../../../components/subtitle/Subtitle';
-import styles from './Project.module.css';
 
 type ProjectType = {
     id?: number
