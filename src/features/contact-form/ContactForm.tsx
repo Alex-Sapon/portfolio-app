@@ -7,9 +7,8 @@ export const ContactForm = () => {
             <Container>
                 <Title title="Get in touch with me"/>
                 <Form>
-                    <Input type="text"/>
-                    <Label />
-                    <Input type="text"/>
+                    <Input type="text" placeholder='full name'/>
+                    <Input type="text" placeholder='email'/>
                     <Textarea name="" id="" cols={30} rows={10}></Textarea>
                     <Button>Submit</Button>
                 </Form>
@@ -46,10 +45,7 @@ const Form = styled.form.attrs({})`
   }
 `;
 
-const Input = styled.input.attrs({
-    id: 'name',
-    placeholder: 'Name'
-})`
+const Input = styled.input`
   width: 100%;
   font-family: inherit;
   border: 0;
@@ -61,16 +57,10 @@ const Input = styled.input.attrs({
   background: transparent;
   transition: border-color 0.2s;
   margin-bottom: 1rem;
-  
-  &::placeholder {
+
+  & placeholder {
     color: transparent;
   }
-`;
-
-const Label = styled.label.attrs({
-    htmlFor: 'name',
-})`
-  
 `;
 
 const Textarea = styled.textarea.attrs({})`
@@ -80,6 +70,7 @@ const Textarea = styled.textarea.attrs({})`
 const Button = styled.button.attrs({})`
 
 `;
+
 
 //
 // $primary: #11998e;

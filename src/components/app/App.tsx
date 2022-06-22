@@ -5,6 +5,7 @@ import {ContactForm} from '../../features/contact-form/ContactForm';
 import {Footer} from '../../features/footer/Footer';
 import {Projects} from '../../features/projects/Projects';
 import {About} from '../../features/about/About';
+import {Main} from '../main/Main';
 import styled, {ThemeProvider} from 'styled-components';
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -28,14 +29,14 @@ export const App = () => {
         <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
             <Container>
                 <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}/>
-                <MainWrapper>
+                <Main>
                     <Greetings/>
                     <About/>
                     <Skills/>
                     <Projects/>
                     <ContactForm/>
                     <Footer/>
-                </MainWrapper>
+                </Main>
             </Container>
         </ThemeProvider>
     );
@@ -46,12 +47,6 @@ const Container = styled.div`
   background-color: ${props => props.theme.body};
   color: ${props => props.theme.title};
   transition: all 0.4s ease;
-`;
-
-export const MainWrapper = styled.div`
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
 `;
 
 const lightTheme = {

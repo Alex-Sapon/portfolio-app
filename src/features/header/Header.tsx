@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom';
 import Avatar from '../../common/images/avatar.png';
 import Sun from '../../common/images/sun.svg';
 import Moon from '../../common/images/moon.svg';
-import {MainWrapper} from '../../components/app/App';
 import styled from 'styled-components';
 
 type HeaderType = {
@@ -21,81 +20,83 @@ export const Header: FC<HeaderType> = ({toggleTheme, isDarkTheme}) => {
 
     return (
         <Container>
-            <MainWrapper>
-                <Wrapper>
+            <Wrapper>
+                <NavGroup>
                     <NavList>
-                        <NavItem><NavLink to="/"><AvatarItem/></NavLink></NavItem>
-                        <NavItem><NavLink to="About m">About me</NavLink></NavItem>
-                        <NavItem><NavLink to="Skills">Skills</NavLink></NavItem>
-                        <NavItem><NavLink to="Projects">Projects</NavLink></NavItem>
-                        <NavItem><NavLink to="Contacts">Contacts</NavLink></NavItem>
+                        <NavItem><Link to="/"><AvatarItem /></Link></NavItem>
+                        <NavItem><Link to="About-me">About me</Link></NavItem>
+                        <NavItem><Link to="Skills">Skills</Link></NavItem>
+                        <NavItem><Link to="Projects">Projects</Link></NavItem>
+                        <NavItem><Link to="Contacts">Contacts</Link></NavItem>
                     </NavList>
                     <WrapperIcon onClick={onToggle}>
                         <Image src={isToggled ? Sun : Moon} alt="Theme"/>
                     </WrapperIcon>
-                </Wrapper>
-            </MainWrapper>
+                </NavGroup>
+            </Wrapper>
         </Container>
     )
 };
 
 const Container = styled.header`
-  background-color: ${props => props.theme.body};
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-  font-family: var(--family);
+    background-color: ${props => props.theme.body};
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+`;
+
+const NavGroup = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 const NavList = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  font-size: 1.2rem;
-  width: 400px;
-  
-  @media (max-width: 767.98px) {
-    width: auto;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    width: 400px;
+    @media (max-width: 767.98px) {
+        width: auto;
+    }
 `;
 
 const NavItem = styled.li`
-  text-decoration: none;
-  color: inherit;
-  
-
-  & a {
     text-decoration: none;
     color: inherit;
-    
-  }
+`;
+
+const Link = styled(NavLink)`
+    text-decoration: none;
+    color: inherit;
 `;
 
 const WrapperIcon = styled.div`
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 `;
 
 const Image = styled.img.attrs({})`
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 `;
 
 const AvatarItem = styled.img.attrs({
     src: Avatar,
-    alt: 'Home',
+    alt: "Home",
 })`
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 `;
 
 

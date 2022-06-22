@@ -2,7 +2,6 @@ import {university, career} from '../../data/data';
 import styled from 'styled-components';
 import {Title} from '../../components/title/Title';
 import {Subtitle} from '../../components/subtitle/Subtitle';
-import { MainWrapper } from '../../components/app/App';
 import {Skill} from './skill/Skill';
 
 export const About = () => {
