@@ -15,9 +15,7 @@ export const Skill = (props: SkillType) => {
 
     return (
         <Container>
-            <ImageWrapper>
-                <Image />
-            </ImageWrapper>
+            <Image/>
             <Description>
                 <Title>{title}</Title>
                 <Subtitle>{role}</Subtitle>
@@ -31,76 +29,71 @@ export const Skill = (props: SkillType) => {
 };
 
 const Container = styled.div`
-    padding: 10px;
-    border: solid 1px lightslategrey;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #2d3748;
-    display: grid;
-    grid-template-columns: 60px 1fr 100px;
-    gap: 15px;
+  padding: 10px;
+  border: solid 1px lightslategrey;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #2d3748;
+  display: grid;
+  grid-template-columns: 60px 1fr 120px;
+  gap: 15px;
 
-    @media (max-width: 991.98px) {}
+  @media (max-width: 991.98px) {
+  }
 
-    @media (max-width: 767.98px) {
-        padding: 10px 10px 0px 10px;
-    }
+  @media (max-width: 767.98px) {
+    padding: 10px 10px 0px 10px;
+  }
 
-    @media (max-width: 479.98px) {
-        padding: 10px 10px 10px 10px;
-        grid-template-columns: 1fr;
-    }
-`;
-
-const ImageWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media (max-width: 479.98px) {
+    padding: 10px 10px 10px 10px;
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Image = styled.img.attrs({
     src: BG,
     alt: 'Image',
 })`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
 `;
 
 const Description = styled.div`
-    padding: 5px;
+  padding: 5px;
 `;
 
 const Title = styled.h4`
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 `;
 
 const Subtitle = styled.p`
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 `;
 
 const SkillList = styled.div`
-    display: flex;
-    flex-wrap: wrap
+  display: flex;
+  flex-wrap: wrap
 `;
 
 const SkillStyled = styled.span`
-    background-color: #9AB8BA;
-    padding: 3px 8px;
-    border-radius: 3px;
-    margin-right: 7px;
+  background-color: #9AB8BA;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 7px;
 
-    @media (max-width: 767.98px) {
-        margin-bottom: 10px;
-    }
+  @media (max-width: 767.98px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const Period = styled.div`
-    text-align: center;
-    padding: 5px;
-    @media (max-width: 479.98px) {
-        text-align: left;
-    }
+  text-align: center;
+  padding: 5px;
+  @media (max-width: 479.98px) {
+    text-align: left;
+  }
 `;

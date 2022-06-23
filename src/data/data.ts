@@ -4,18 +4,28 @@ export const projects = [
     {
         id: 1,
         title: 'Social network',
+        link: '',
         alt: 'Social network',
         logo: ProjectBG,
     },
     {
         id: 2,
         title: 'Todo list',
+        link: '',
         alt: 'Todo list',
         logo: ProjectBG,
     },
     {
         id: 3,
+        title: 'Cards',
+        link: '',
+        alt: 'Cards',
+        logo: ProjectBG,
+    },
+    {
+        id: 4,
         title: 'Counter',
+        link: '',
         alt: 'Counter',
         logo: ProjectBG,
     },
