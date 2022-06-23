@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.c673406e.css",
-    "main.js": "/portfolio-app/static/js/main.2f64c68e.js",
+    "main.css": "/portfolio-app/static/css/main.76d701ed.css",
+    "main.js": "/portfolio-app/static/js/main.fecc8e4f.js",
     "static/media/avatar.png": "/portfolio-app/static/media/avatar.0ee1c0bd62462a84cbf4.png",
     "static/media/bg.png": "/portfolio-app/static/media/bg.0225267609dbd40b1c41.png",
     "static/media/react.svg": "/portfolio-app/static/media/react.21a0c19c223ef140c1a0a351bd45c89c.svg",
@@ -17,11 +17,11 @@
     "static/media/moon.svg": "/portfolio-app/static/media/moon.f7f6a5694d849d508c5b3bd656a599aa.svg",
     "static/media/linkedin.svg": "/portfolio-app/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/ts.svg": "/portfolio-app/static/media/ts.3c3e66ed2768391469c8b74c302a6e5c.svg",
-    "main.c673406e.css.map": "/portfolio-app/static/css/main.c673406e.css.map",
-    "main.2f64c68e.js.map": "/portfolio-app/static/js/main.2f64c68e.js.map"
+    "main.76d701ed.css.map": "/portfolio-app/static/css/main.76d701ed.css.map",
+    "main.fecc8e4f.js.map": "/portfolio-app/static/js/main.fecc8e4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c673406e.css",
-    "static/js/main.2f64c68e.js"
+    "static/css/main.76d701ed.css",
+    "static/js/main.fecc8e4f.js"
   ]
 }
